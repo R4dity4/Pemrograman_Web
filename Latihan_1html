@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <title>Pemrograman Web-html</title>
+</head>
+<body bgcolor="gold">
+    <h1>SMK Texmaco Semarang</h1>
+    <hr>
+    <p><label>Nama = Raditya Muhammad hisyam<label>
+        <label>Kelas = X RPL 1 <label></p>
+        <br>
+        jenis kelamin = laki laki
+</body>
+</html>
