@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Hitung Luas</title>
+</head>
+<body bgcolor="lavender">
+    <h1>Menghitung Luas</h1>
+    <hr>
+ <br>Masukkan Panjang =<input type="number" id="panjang"></br>
+ <br>Masukkan Lebar =<input type="number" id="lebar"></br>
+    <div style="display: flex;align-items: center;justify-content: center;">
+		<input  type="button" onclick="hitungLuas()" value="hitung luas">
+        <p>Luas: <input type="number" id="luas" name="luas"></p>
+	</form>
+</div>
+    <script>
+		function hitungLuas() {
+			let panjang = document.getElementById("panjang").value;
+			let lebar = document.getElementById("lebar").value;
+			let luas = panjang * lebar;
+            document.getElementById("luas").value = luas;
+           
+		}
+	</script>
+	
+</body>
+</html>
+ </body>
+ </html>
