@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array, percabangan, dan Loop</title>
+</head>
+<body>
+
+<h2>Array, percabangan, dan Loop Barang Elektronik</h2>
+
+<script>
+  //Array Nama Barang
+  var Barang = ["Kabel", "TV", "AC", "Proyektor", "Laptop"," Lampu","oven","Kipas Angin","Setrika","Pompa Air"];
+
+  // Percabangan Syarat Dengan True or False
+  var Bapak = true;
+
+  if (Bapak) {
+    document.write("<p><strong>Selamat Datang, Bapak. silahkan dipilih barang yang akan dibeli🙏</strong></p>");
+  } else {
+    document.write("<p><strong>Selamat Datang, Ibu. silahkan dipilih barang yang akan dibeli🙏</p></strong>");
+  }
+
+  // Perulangan Array yang berisi Nama Barang
+  document.write("<p>List Barang Elektronik yang ada di toko kami:</p>");
+  document.write("<ul>");
+  for (var i = 0; i < Barang.length; i++) {
+    document.write("<li>" + Barang[i] + "</li>");
+  }
+  document.write("</ul>");
+  // Percabangan Switch dengan memilih angka
+  var jawab = prompt("Silahkan pilih Barang Yang Ingin Dibeli dengan memasukan angka 1 sampai 10. Jika Belum Mengetahui List Barang yang akan dipilih, tidak perlu mengetik apapun dan pencet tombol *BAIK*"); 
+         var Barang = ""; 
+  
+         switch(jawab){ 
+             case "1": 
+                 Barang = "Kabel"; 
+                 break; 
+             case "2": 
+                 Barang = "Tv"; 
+                 break; 
+             case "3": 
+                 Barang = "AC"; 
+                 break; 
+             case "4": 
+                 Barang = "Proyektor"; 
+                 break; 
+             case "5": 
+                 Barang = "Laptop"; 
+                 break; 
+             case "6": 
+                 Barang = "Lampu"; 
+                 break;
+             case "7": 
+                 Barang = "Oven"; 
+                 break;
+             case "8": 
+                 Barang = "Kipas Angin"; 
+                 break;
+             case "9": 
+                 Barang = "Setrika"; 
+                 break;
+             case "10": 
+                 Barang = "Pompa Air"; 
+                 break;                                                  
+             default: 
+                 document.write("<p><strong>Silahkan Pilih barang yang ada di list...</strong></p>"); 
+         } 
+  
+  
+         if(Barang === ""){ 
+             document.write("<p><strong>Pilih Nomor Yang sesuai untuk memilih barang, silahkan Refresh/Segarkan laman ini</strong></p>"); 
+         } else { 
+             document.write("<h3>Terima Kasih telah Membeli " + Barang + " di toko kami " + "</h3>"); 
+         }
+</script>
+
+</body>
+</html>
