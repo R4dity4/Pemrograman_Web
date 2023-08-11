@@ -1,0 +1,142 @@
+{
+   margin: 0;
+   padding: 0;
+   box-sixxing: border-box;
+}
+
+body{
+    background: navy;
+}
+
+body{
+    color: #fff;    
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(135deg, #05073a, #310752 40%, #05073a);
+}
+.wrapper{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background: linear-gradient(135deg,   #a647ef, #05073a);
+}
+.wrapper .heading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+
+}
+.wrapper .heading::before{
+    content: '';
+    position: absolute;
+     height: 2px;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background: linear-gradient(135deg,  #71b7e6, #9b5b);
+ 
+}
+.wrapper form .card-details{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+form .card-details  .card-box{
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+.card-details .card-box .detail{
+     display: block;
+     font-weight: 500;
+     margin-bottom: 5px;
+}
+.card-details .card-box  input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 25px;
+    border:1px solid #accc;
+    padding-left: 15px;
+    font-size: 0.8em;
+    background: transparent;
+    color: #fff;
+    }
+.card-details .card-box input::placeholder{
+    color:#ccc;
+}
+.card-details .card-box input:focus{
+    border-color: #cba8e6;
+    box-shadow: 3px 2px 10px #05073a;
+}
+form .radio .radio-title{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+}
+.card-details .card-box select{
+    height: 45px;
+    width: 25%;
+    outline: none;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size: 0.8em;
+    background: transparent;  
+    color: #fff;  
+}
+.card-details .card-box select option{
+    color: #000;   
+}()
+form .radio .radio-title{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid;
+}
+form .radio .category{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form .tombol input{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 80%;
+    width: 50%;
+    outline: none;
+    color: #fff;
+    border: none ;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius:5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #a647ef, #05073a);
+
+
+}
+form .tombol input:hover{
+    background: linear-gradient(135deg, #310752, #a647ef);
+}
+@media (max-width:584px){
+    .wrapper{
+        max-width: 100%;
+
+    }
+    form .card-details .card-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .radio .category{
+        width: 100%;
+
+    }
+    .wrapper form .card-details{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .card-details.card-details::-webkit-scrollbar{
+        width: 1px;
+    }
+}
